@@ -30,7 +30,7 @@
     .tile8x4 {
         padding: 20px;
         width: 100%;
-        height: calc(40vh - 10px);
+        height: 40vh;
         border-radius: 25px;
 
         background-color: #b1c8ca;
@@ -47,8 +47,8 @@
     .tile4x4 {
         padding: 20px;
         display: inline-block;
-        width: calc(50% - 10px);
-        height: calc(40vh - 10px);
+        width: 50%;
+        height: 40vh;
         border-radius: 25px;
         flex:1 1 auto;
 
@@ -66,12 +66,10 @@
     #tile4x4Left {
         padding-right: 5px;
         background-color: #e9effe;
-        margin-right: 10px;
     }
 
     #tile4x4Right {
         background-color: #fdf8e1;
-        margin-left: 10px;
     }
 }
 
@@ -82,9 +80,5 @@
 #tilesContainerRight {
     padding-left: 10px;
     flex: 1;
-
-    .tilesInnerContainer:nth-child(2) {
-        padding-top: 10px;
-      }
 }
 }
