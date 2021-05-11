@@ -1,3 +1,5 @@
+import Clock from 'react-live-clock';
+
 const Header = () => {
     return (
         <header>
@@ -15,7 +17,7 @@ const Header = () => {
                 </ul>
                 <ul className="navRight">
                     <li>
-                        <p className="time">23:59</p>
+                        <p><Clock format={'HH:mm'} ticking={true} timezone={'NL/Amsterdam'} /></p>
                     </li>
                 </ul>
             </nav>
@@ -25,5 +27,3 @@ const Header = () => {
 }
 
 export default Header
-
-//rafce
