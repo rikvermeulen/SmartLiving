@@ -29,7 +29,7 @@
 
     .tile8x4 {
         width: 100%;
-        height: 40vh;
+        height: calc(40vh - 10px);
         border-radius: 25px;
         text-align:center;
 
