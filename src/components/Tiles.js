@@ -15,11 +15,16 @@ const Tiles = () => {
                 </div>
                 <div className="tilesInnerContainer">
                     <div className="tile4x4" id="tile4x4Left">
+                        <div>
                         <h2>Punten</h2>
                         <p>3457</p>
+                        </div>
                     </div>
                     <div className="tile4x4" id="tile4x4Right">
-                        <h2>Avatar</h2>
+                    <div>
+                        <h2>Punten</h2>
+                        <p>3457</p>
+                        </div>
                     </div>
                 </div>
             </div>   
