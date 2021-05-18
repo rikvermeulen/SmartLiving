@@ -1,4 +1,4 @@
-.main {
+.tiles {
     display: flex;
 
     .tilesContainer {
@@ -8,17 +8,34 @@
     .tile8x8 {
         padding: 20px;
         width: 100%;
-        background-color: #c4c4c4;
-        color: #fff;
+        background-color: #fff;
+        color: #000;
         height: calc(80vh + 10px);
         border-radius: 25px;
-        -webkit-box-shadow: 2px 2px 3px 0px #a7a7a7;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-        -moz-box-shadow:    2px 2px 3px 0px #a7a7a7;  /* Firefox 3.5 - 3.6 */
-        box-shadow: 2px 2px 3px 0px #a7a7a7;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+        box-shadow: 1px 0px 0px 0px #f6f6f7;
 
-        h2 {
-            font-weight: bold;
+        .tile_title {
+            display: flex;
+            padding-bottom: 30px;
+
+            span {
+                padding: 10px 12px;
+                background-color: #f7edff;
+                border-radius: 55px;
+
+                svg {
+                    fill: #8624dc;
+                    width: 20px;
+                }
+            }
+            h2 {
+                font-weight: bold;
+                padding: 10px 0 0 20px;
+            }
+
         }
+
+        
     
     }
 
@@ -33,14 +50,55 @@
         height: 40vh;
         border-radius: 25px;
 
-        background-color: #b1c8ca;
-        -webkit-box-shadow: 2px 2px 3px 0px #c3c3c3;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-        -moz-box-shadow:    2px 2px 3px 0px #c3c3c3;  /* Firefox 3.5 - 3.6 */
-        box-shadow:         2px 2px 3px 0px #c3c3c3;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+        background-color: #fff;
+        box-shadow: 1px 0px 0px 0px #f6f6f7;
 
-        h2{
-            font-weight: bold;
-            color: white
+        .tile_title {
+            display: flex;
+            padding-bottom: 30px;
+
+            span {
+                padding: 10px 12px;
+                background-color: #fff2ee;;
+                border-radius: 55px;
+
+                svg {
+                    fill: #ff9066;;
+                    width: 20px;
+                }
+            }
+            h2 {
+                font-weight: bold;
+                padding: 10px 0 0 20px;
+            }
+
+        }
+
+        .graph_info {
+            display: flex;
+            align-items: center;   
+            justify-content: center;
+
+            #electricity,#gas,#water {
+                display: flex;
+                padding-right: 10px;
+
+                span {
+                    padding: 6px 9px;
+                    border-radius: 50px;
+                    height: 9px;
+                    margin-top: 5px;
+                }
+
+                p {
+                    padding-left: 10px;
+                }
+
+            }
+
+            #electricity { span {background-color: #8624dc;}}
+            #gas{ span {background-color: #ff9066;}}
+            #water{ span {background-color: #637677;}}
         }
     }
 
@@ -51,27 +109,64 @@
         height: calc(40vh - 10px);
         border-radius: 25px;
         flex:1 1 auto;
-
-
-        -webkit-box-shadow: 2px 2px 3px 0px #c3c3c3;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-        -moz-box-shadow:    2px 2px 3px 0px #c3c3c3;  /* Firefox 3.5 - 3.6 */
-        box-shadow:         2px 2px 3px 0px #c3c3c3;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+        box-shadow: 1px 0px 0px 0px #f6f6f7;
 
         h2 {
             font-weight: bold;
-            color: grey;
+            color: #000;
         }
     }
 
     #tile4x4Left {
         padding-right: 5px;
-        background-color: #e9effe;
+        background-color: #fff;
         margin-right: 10px;
+
+        .tile_title {
+            display: flex;
+            padding-bottom: 30px;
+
+            span {
+                padding: 10px 12px;
+                background-color: #f3fdfe;
+                border-radius: 55px;
+
+                svg {
+                    fill: #637677;
+                    width: 20px;
+                }
+            }
+            h2 {
+                font-weight: bold;
+                padding: 10px 0 0 20px;
+            }
+
+        }
     }
 
     #tile4x4Right {
-        background-color: #fdf8e1;
+        background-color: #fff;
         margin-left: 10px;
+
+        .tile_title {
+            display: flex;
+            padding-bottom: 30px;
+
+            span {
+                padding: 10px 12px;
+                background-color: #f7edff;
+                border-radius: 55px;
+
+                svg {
+                    fill: #8624dc;
+                    width: 20px;
+                }
+            }
+            h2 {
+                font-weight: bold;
+                padding: 10px 0 0 20px;
+            }
+        }
     }
 }
 

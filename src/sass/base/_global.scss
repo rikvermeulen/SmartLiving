@@ -20,7 +20,7 @@ body {
     padding: 0;
     font-family: "Akagi", “Helvetica Neue”, sans-serif;
     color: #000;
-    background-color: #f8fafb;
+    background-color: #f5faff;
     overscroll-behavior: none;
 }
 
@@ -139,4 +139,12 @@ input, textarea, select, a:focus {
 
 input, textarea, select, a {
     outline: none;
+}
+
+.home {
+    display: flex;
+}
+
+.main {
+    width: 92%
 }

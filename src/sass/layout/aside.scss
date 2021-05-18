@@ -1,0 +1,47 @@
+aside {
+    width: 8%;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 1px 0px 0px 0px #f6f6f7;
+
+    .profile {
+        text-align: center;
+
+        img {
+            width: 60%;
+        }
+
+        p {
+            color: #a2acb8;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+    }
+
+    header {
+        padding-top: 16vh;
+        display: flex;
+        align-items: center;   
+        justify-content: center;
+
+        ul {
+            li {
+                text-align: center;
+                padding: 20px 0 20px;
+                a {
+                    color: #a2acb8;
+
+                    img,svg {
+                        width: 25%;
+                        fill: #a2acb8;
+                    }
+                }
+
+                .active {
+                    color: #8624dc;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

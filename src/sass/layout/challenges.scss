@@ -4,14 +4,12 @@
 	  }
 	  
 	  .quest {
-		background-color: #ebebeb;
+		background-color: #f5faff;
 		width: 100%;
-		border: 1px solid #bababa;
 		border-radius: 15px;
-		box-shadow: 0px 0px 7px #bababa;
 		padding: 10px;
 		margin-bottom: 5px;
-		color: grey;
+		color: #000;
 	  }
 	  
 	  .quest:hover .hide_quest{
@@ -24,12 +22,13 @@
 	  .quest_header {
 		font-family: verdana;
 		font-size: 20px;
+		padding-bottom: 20px;
 	  }
 	  
 	  .bar{
 		width: 330;
 		height: 15px;
-		background-color:	#b3b3b3;
+		background-color:	#ffffff;
 		border-radius: 10px;
 		margin-top: 5px;
 		margin-bottom: 5px;
@@ -43,10 +42,11 @@
 	  
 	  .quest_button{
 		display: none;
-		border: 2px solid #b3b3b3;
 		border-radius: 15px;
 		margin-bottom: 5px;
-		padding:2px;
+		background-color: #8624dc;
+		padding:8px;
+		color: #fff;
 		padding-left: 10px;
 		padding-right: 10px;
 	  }
@@ -59,20 +59,20 @@
 	  .gas{
 		background-color:	#797986;
 	  }
-	  .line{
-		width: 80%;
-		height: 1px;
-		background-color:	#b3b3b3;
-		margin-left: 10%;
-		margin-bottom: 5px;
-	  }
+	//   .line{
+	// 	width: 80%;
+	// 	height: 1px;
+	// 	background-color:	#b3b3b3;
+	// 	margin-left: 10%;
+	// 	margin-bottom: 5px;
+	//   }
 	  
 	  .arrow {
 		display: inline-block;
 		width: 10px;
 		height: 10px;
-		border-top: 2px solid #b3b3b3;
-		border-right: 2px solid #b3b3b3;
+		border-top: 2px solid #8624dc;
+		border-right: 2px solid #8624dc;
 		margin-left: 50%;
 		
 		animation-name: out;
