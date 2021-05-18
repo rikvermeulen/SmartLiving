@@ -1,0 +1,97 @@
+
+	.hide_quest{
+		display: none;
+	  }
+	  
+	  .quest {
+		background-color: #ebebeb;
+		width: 100%;
+		border: 1px solid #bababa;
+		border-radius: 15px;
+		box-shadow: 0px 0px 7px #bababa;
+		padding: 10px;
+		margin-bottom: 5px;
+		color: grey;
+	  }
+	  
+	  .quest:hover .hide_quest{
+		display: block;
+	  }
+	  .quest:hover .quest_button{
+		display: block;
+	  }
+	  
+	  .quest_header {
+		font-family: verdana;
+		font-size: 20px;
+	  }
+	  
+	  .bar{
+		width: 330;
+		height: 15px;
+		background-color:	#b3b3b3;
+		border-radius: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 3px;
+	  }
+	  
+	  .filling{
+		height: 100%; 
+		border-radius:10px;
+	  }
+	  
+	  .quest_button{
+		display: none;
+		border: 2px solid #b3b3b3;
+		border-radius: 15px;
+		margin-bottom: 5px;
+		padding:2px;
+		padding-left: 10px;
+		padding-right: 10px;
+	  }
+	  .water{
+		background-color:	#80ccff;
+	  }
+	  .elektric{
+		background-color:	#ffff80;
+	  }
+	  .gas{
+		background-color:	#797986;
+	  }
+	  .line{
+		width: 80%;
+		height: 1px;
+		background-color:	#b3b3b3;
+		margin-left: 10%;
+		margin-bottom: 5px;
+	  }
+	  
+	  .arrow {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border-top: 2px solid #b3b3b3;
+		border-right: 2px solid #b3b3b3;
+		margin-left: 50%;
+		
+		animation-name: out;
+		animation-duration: .5s;
+		animation-fill-mode: forwards;
+	  
+	  }
+	  .quest:hover .arrow {
+		animation-name: in;
+		animation-duration: .5s;
+		animation-fill-mode: forwards;
+	  }
+	  
+	  @keyframes out {
+		from  {transform: rotate(-45deg);}
+		to   {transform: rotate(135deg);}
+	  }
+	  
+	  @keyframes in {
+		from  {transform: rotate(135deg);}
+		to   {transform: rotate(-45deg);}
+	  }
