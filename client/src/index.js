@@ -11,8 +11,6 @@ import Graph from './components/pages/Graph'
 import Settings from './components/pages/Settings'
 
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}

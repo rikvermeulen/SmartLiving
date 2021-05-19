@@ -12,9 +12,9 @@ const Tiles = () => {
                         <p className="quest_points">Aantal punten: <span>300</span></p>
                         <div className="hide_quest"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
                         <div className="bar">
-                            <div className="filling gas"></div>
+                            <div className="filling elektric"></div>
                         </div>
-                        <button className="quest_button gas">Claimen</button>
+                        <button className="quest_button elektric">Claimen</button>
                         <div className="arrow"></div>
                     </div>
 
