@@ -8,9 +8,9 @@ const Tiles = () => {
                         <h2>Challeges</h2>
                     </div>
                     <div className="quest elektric-trans">
-                        <h3 className="quest_header">This is quest 1.</h3>
-                        <p className="quest_points">Aantal punten: <span>300</span></p>
-                        <div className="hide_quest"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                        <h3 className="quest_header"><span>Elektriciteit</span></h3>
+                        <p className="quest_points_elektric">Totaal aantal punten te behalen: <span>300</span></p>
+                        <div className="hide_quest"> Gebruik de wasmachine minder. </div>
                         <div className="bar">
                             <div className="filling elektric"></div>
                         </div>
@@ -19,13 +19,24 @@ const Tiles = () => {
                     </div>
 
                     <div class="quest water-trans">
-                        <h3 class="quest_header">This is quest 2.</h3>
-                        <p className="quest_points">Aantal punten: <span>300</span></p>
-                        <div class="hide_quest"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                        <h3 class="quest_header"><span>Water</span></h3>
+                        <p className="quest_points_water">Totaal aantal punten te behalen: <span>300</span></p>
+                        <div class="hide_quest"> Douche niet langer dan 10 minuten per keer.</div>
                         <div class="bar">
                             <div class="filling water"></div>
                         </div>
                         <button class="quest_button water">Claimen</button>
+                        <div class="arrow"></div>
+                    </div>
+
+                    <div class="quest gas-trans">
+                        <h3 class="quest_header"><span>Gas</span></h3>
+                        <p className="quest_points_gas">Totaal aantal punten te behalen: <span>300</span></p>
+                        <div class="hide_quest"> Het gemiddelde temperatuur in huis moet niet hoger zijn dan 21 graden een hele week lang. </div>
+                        <div class="bar">
+                            <div class="filling gas"></div>
+                        </div>
+                        <button class="quest_button gas">Claimen</button>
                         <div class="arrow"></div>
                     </div>
                 </div>
