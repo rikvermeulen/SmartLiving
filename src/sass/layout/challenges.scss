@@ -8,27 +8,41 @@
 		width: 100%;
 		border-radius: 15px;
 		padding: 10px;
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 		color: #000;
+	  }
+
+	  .quest_points {
+		  font-size: 14px;
+		  padding-bottom: 20px;
+		  color:#000;
+
+		  span {
+			color:#8624dc;
+			font-weight: bold;
+		  }
 	  }
 	  
 	  .quest:hover .hide_quest{
 		display: block;
+		margin-bottom: 20px;
+		transition: all 1s;
 	  }
 	  .quest:hover .quest_button{
 		display: block;
+		transition: all 1s;
 	  }
 	  
 	  .quest_header {
 		font-family: verdana;
 		font-size: 20px;
-		padding-bottom: 20px;
+		padding-bottom: 5px;
 	  }
 	  
 	  .bar{
 		width: 330;
-		height: 15px;
-		background-color:	#ffffff;
+		height: 20px;
+		background-color: #e2e2e2;
 		border-radius: 10px;
 		margin-top: 5px;
 		margin-bottom: 5px;
@@ -42,22 +56,33 @@
 	  
 	  .quest_button{
 		display: none;
-		border-radius: 15px;
+		border-radius: 8px;
 		margin-bottom: 5px;
 		background-color: #8624dc;
-		padding:8px;
+		padding: 9px;
 		color: #fff;
 		padding-left: 10px;
 		padding-right: 10px;
+		font-size: 15px;
 	  }
 	  .water{
-		background-color:	#80ccff;
+		background-color:	#8624dc;
 	  }
 	  .elektric{
-		background-color:	#ffff80;
+		background-color:	#ff9066;
 	  }
 	  .gas{
-		background-color:	#797986;
+		background-color:	#637677;
+	  }
+
+	  .water-trans{
+		background-color:	#f7ecfe;
+	  }
+	  .elektric-trans{
+		background-color:	#fff2ee;
+	  }
+	  .gas-trans{
+		background-color:	#637677;
 	  }
 	//   .line{
 	// 	width: 80%;

@@ -29,17 +29,35 @@ aside {
                 text-align: center;
                 padding: 20px 0 20px;
                 a {
+                    position: relative;
                     color: #a2acb8;
 
                     img,svg {
-                        width: 25%;
+                        width: 20px;
+                        height: 20px;
                         fill: #a2acb8;
+                    }
+
+                    hr {
+                        display: none;
                     }
                 }
 
                 .active {
                     color: #8624dc;
                     font-weight: bold;
+
+                    hr {
+                        position: absolute;
+                        display: block;
+                        right: -34px;
+                        height: 50px;
+                        top: -22px;
+                    }
+
+                    svg {
+                        fill: #8624dc;
+                    }
                 }
             }
         }

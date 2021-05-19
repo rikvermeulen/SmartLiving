@@ -4,7 +4,7 @@ import Aside from "../Aside"
 
 function Challenges() {
   return (
-    <div className="Challenges">
+    <div className="challenges">
       <Aside/>
       <div className="main">
         <div className="container">

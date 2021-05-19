@@ -4,7 +4,7 @@ import Aside from "../Aside"
 
 function Points() {
   return (
-    <div className="Points">
+    <div className="points">
       <Aside/>
       <div className="main">
         <div className="container">
