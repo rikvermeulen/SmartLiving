@@ -3,12 +3,12 @@ const Tiles = () => {
         <div className="main">
             <div className="tilesContainer" id="tilesContainerLeft">
                 <div className="tile8x8">
-                    <h2>Challeges</h2>
+                    <h2>Challenges</h2>
                     <div class="quest">
-                        <h3 class="quest_header">This is quest 1.</h3>
+                        <h3 class="quest_header">Elektriciteit</h3>
                         <div class="hide_quest"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
                         <div class="bar">
-                            <div class="filling gas"></div>
+                            <div class="filling elektriciteit"></div>
                         </div>
                         <button class="quest_button gas">Claimen</button>
                         <div class="line"></div>
@@ -16,7 +16,18 @@ const Tiles = () => {
                     </div>
 
                     <div class="quest">
-                        <h3 class="quest_header">This is quest 2.</h3>
+                        <h3 class="quest_header">Gas</h3>
+                        <div class="hide_quest"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                        <div class="bar">
+                            <div class="filling gas"></div>
+                        </div>
+                        <button class="quest_button water">Claimen</button>
+                        <div class="line"></div>
+                        <div class="arrow"></div>
+                    </div>
+
+                    <div class="quest">
+                        <h3 class="quest_header">Water</h3>
                         <div class="hide_quest"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
                         <div class="bar">
                             <div class="filling water"></div>
