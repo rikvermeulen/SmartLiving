@@ -1,9 +1,42 @@
-import React, {Component, component} from 'react';
+import React, {Component, component, useEffect, useState} from 'react';
 import {Bar, Line, Pie} from 'react-chartjs-2';
+import Graph from './pages/Graph';
 
-data = [1,2,3,4,5,6,7]
+const Chart = () => {
+  const [chartData, setChartData] = useState({})
 
-class Chart extends  Component{
+  const chart = () =>[
+    setChartData({
+      labels: ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag'], 
+      datasets:[
+        {
+          label:'Water',
+          data:[1,2,3,4,5,6,7],
+          backgroundColor:['rgba(255, 0, 0, 0.6)'],
+          borderWidth: 4
+        }
+      ]
+    })
+  ]
+  useEffect(() => {
+    chart()
+  }, [])
+
+  return(
+    <div className="Chart">
+      <h1>Chart</h1>
+      <div style={{height: "100px", width: "200px"}}>
+        <Bar data={chartData} option={{
+          responsive: true,
+          title: {text: 'Water verbruik', display: true}
+          }}/>
+      </div>
+    </div>
+  )
+}
+
+export default Chart;
+/*class Chart extends  Component{
   constructor(){
     super(props);
     this.state = {
@@ -67,4 +100,4 @@ class Chart extends  Component{
   }
 }
 
-export default Chart;
+export default Chart;*/
