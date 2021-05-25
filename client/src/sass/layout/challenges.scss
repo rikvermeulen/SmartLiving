@@ -1,0 +1,143 @@
+	.hide_quest{
+		display: none;
+	  }
+	  
+	  .quest {
+		background-color: #f5faff;
+		width: 100%;
+		border-radius: 15px;
+		padding: 10px;
+		margin-bottom: 15px;
+		color: #000;
+	  }
+
+	  .quest_points_elektric {
+		  font-size: 14px;
+		  padding-bottom: 20px;
+		  color:#000;
+		  span {
+			color:#ff9066;
+			font-weight: bold;
+		  }
+	  }
+
+	  .quest_points_water {
+		font-size: 14px;
+		padding-bottom: 20px;
+		color:#000;
+		span {
+		  color:#8624dc;
+		  font-weight: bold;
+		}
+	}
+
+	.quest_points_gas {
+		font-size: 14px;
+		padding-bottom: 20px;
+		color:#000;
+		span {
+		  color:#637677;
+		  font-weight: bold;
+		}
+	}
+	  
+	  .quest:hover .hide_quest{
+		display: block;
+		margin-bottom: 20px;
+		transition: all 1s;
+	  }
+	  .quest:hover .quest_button{
+		display: block;
+		transition: all 1s;
+	  }
+	  
+	  .quest_header {
+		font-family: verdana;
+		font-size: 20px;
+		padding-bottom: 5px;
+		span {
+			font-weight: bold;
+		}
+	  }
+	  
+	  .bar{
+		width: 330;
+		height: 20px;
+		background-color: #e2e2e2;
+		border-radius: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 3px;
+	  }
+	  
+	  .filling{
+		height: 100%; 
+		border-radius:10px;
+	  }
+	  
+	  .quest_button{
+		display: none;
+		border-radius: 8px;
+		margin-bottom: 5px;
+		background-color: #8624dc;
+		padding: 9px;
+		color: #fff;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 15px;
+	  }
+	  .water{
+		background-color:	#8624dc;
+	  }
+	  .elektric{
+		background-color:	#ff9066;
+	  }
+	  .gas{
+		background-color:	#637677;
+	  }
+
+	  .water-trans{
+		background-color:	#f7ecfe;
+	  }
+	  .elektric-trans{
+		background-color:	#fff2ee;
+	  }
+	  .gas-trans{
+		background-color:	#dde8e9;
+	  }
+	//   .line{
+	// 	width: 80%;
+	// 	height: 1px;
+	// 	background-color:	#b3b3b3;
+	// 	margin-left: 10%;
+	// 	margin-bottom: 5px;
+	//   }
+	  
+	  .arrow {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border-top: 2px solid #8624dc;
+		border-right: 2px solid #8624dc;
+		margin-left: 50%;
+		
+		animation-name: out;
+		animation-duration: .5s;
+		animation-fill-mode: forwards;
+	  
+	  }
+	  .quest:hover .arrow {
+		animation-name: in;
+		animation-duration: .5s;
+		animation-fill-mode: forwards;
+	  }
+	  
+	  @keyframes out {
+		from  {transform: rotate(-45deg);}
+		to   {transform: rotate(135deg);}
+	  }
+	  
+	  @keyframes in {
+		from  {transform: rotate(135deg);}
+		to   {transform: rotate(-45deg);}
+	  }

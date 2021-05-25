@@ -1,0 +1,65 @@
+aside {
+    width: 8%;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 1px 0px 0px 0px #f6f6f7;
+
+    .profile {
+        text-align: center;
+
+        img {
+            width: 60%;
+        }
+
+        p {
+            color: #a2acb8;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+    }
+
+    header {
+        padding-top: 16vh;
+        display: flex;
+        align-items: center;   
+        justify-content: center;
+
+        ul {
+            li {
+                text-align: center;
+                padding: 20px 0 20px;
+                a {
+                    position: relative;
+                    color: #a2acb8;
+
+                    img,svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #a2acb8;
+                    }
+
+                    hr {
+                        display: none;
+                    }
+                }
+
+                .active {
+                    color: #8624dc;
+                    font-weight: bold;
+
+                    hr {
+                        position: absolute;
+                        display: block;
+                        right: -34px;
+                        height: 50px;
+                        top: -22px;
+                    }
+
+                    svg {
+                        fill: #8624dc;
+                    }
+                }
+            }
+        }
+    }
+}
