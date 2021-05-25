@@ -1,6 +1,59 @@
 .tiles {
     display: flex;
 
+    .tilesContainer-kwart {
+        width: 25%;
+        height: 100%;
+
+        .tile4x2 {
+            padding: 20px;
+            width: calc(100% - 10px);
+            height: calc(20vh - 5px);
+            margin-bottom: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 25px;
+            flex:1 1 auto;
+            box-shadow: 1px 0px 0px 0px #f6f6f7;
+    
+            h2 {
+                font-weight: bold;
+                color: #000;
+            }
+        }
+
+        .tile4x4 {
+            padding: 20px;
+            margin: 0 0 10px 10px;
+            width: calc(100% - 10px);
+            height: calc(40vh);
+            background-color: rgb(255, 255, 255);
+            border-radius: 25px;
+            flex:1 1 auto;
+            box-shadow: 1px 0px 0px 0px #f6f6f7;
+    
+            h2 {
+                font-weight: bold;
+                color: #000;
+            }
+        }
+    }
+
+    .tilesContainer-full {
+        width: 100%;
+        height: 100%;
+
+
+        .tile-full {
+            padding: 20px;
+            width: 100%;
+            background-color: #fff;
+            color: #000;
+            height: calc(80vh + 10px);
+            border-radius: 25px;
+            box-shadow: 1px 0px 0px 0px #f6f6f7;
+        }
+    }
+
     .tilesContainer {
         width: 50%;
         height: 100%;
