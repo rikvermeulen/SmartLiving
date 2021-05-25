@@ -1,6 +1,7 @@
 import '../../sass/app.scss';
 import Header from "../Header"
 import Aside from "../Aside"
+import Chart from "../Chart";
 
 function Graph() {
   return (
@@ -12,6 +13,7 @@ function Graph() {
           <div className="tiles">
               <div className="tilesContainer-full" id="tilesContainerLeft">
                   <div className="tile-full">
+               
                   </div>
               </div>
           </div>

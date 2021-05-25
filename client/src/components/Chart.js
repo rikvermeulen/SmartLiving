@@ -1,6 +1,5 @@
 import React, {Component, component} from 'react';
 import {Bar, Line, Pie} from 'react-chartjs-2';
-import Graph from './pages/Graph';
 
 data = [1,2,3,4,5,6,7]
 
