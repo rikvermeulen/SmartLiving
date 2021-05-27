@@ -4,7 +4,6 @@ import Graph from './pages/Graph';
 
 
 
-
 const Chart = () => {
   const [chartData, setChartData] = useState({})
   const chart = () =>[
