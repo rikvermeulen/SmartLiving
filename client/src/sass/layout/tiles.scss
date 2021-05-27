@@ -10,14 +10,41 @@
             width: calc(100% - 10px);
             height: calc(20vh - 5px);
             margin-bottom: 10px;
-            background-color: rgb(255, 255, 255);
+            background-color: #fff;
             border-radius: 25px;
             flex:1 1 auto;
             box-shadow: 1px 0px 0px 0px #f6f6f7;
     
-            h2 {
-                font-weight: bold;
-                color: #000;
+            .title {
+                position: relative;
+
+                h3 {
+                    font-weight: 600;
+                    color: #637677;
+                }
+
+                img {
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    width: 5%;
+                }
+
+            }
+
+            .button {
+                text-align: center;
+
+                button {
+                    border-radius: 8px;
+                    margin-bottom: 5px;
+                    background-color: #637677;
+                    padding: 15px 30px;
+                    color: #fff;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 15px;
+                }
             }
         }
 
@@ -34,6 +61,87 @@
             h2 {
                 font-weight: bold;
                 color: #000;
+            }
+        }
+
+        #tile4x4Left {
+            padding-right: 5px;
+            background-color: #fff;
+            margin-right: 10px;
+    
+            .tile_title {
+                display: flex;
+                padding-bottom: 30px;
+                text-align: center;
+    
+                span {
+                    padding: 10px 12px;
+                    background-color: #f3fdfe;
+                    border-radius: 55px;
+    
+                    svg {
+                        fill: #637677;
+                        width: 20px;
+                    }
+                }
+                h2 {
+                    font-weight: bold;
+                    padding: 10px 0 0 20px;
+                }
+            }
+    
+            .point {
+                h3 {
+                    font-weight: 600;
+                    margin: 10px 0 50px;
+                    font-size: 30px;
+                    color: #637677;
+                }
+    
+                p {
+                    margin-bottom: 20px;
+    
+                    span {
+                    font-weight: 600;
+                    color: #637677;
+                    }
+                }
+    
+                button {
+                    border-radius: 8px;
+                    margin-bottom: 5px;
+                    background-color: #637677;
+                    padding: 9px;
+                    color: #fff;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    
+        #tile4x4Right {
+            background-color: #fff;
+            margin-left: 10px;
+    
+            .tile_title {
+                display: flex;
+                padding-bottom: 30px;
+    
+                span {
+                    padding: 10px 12px;
+                    background-color: #f7edff;
+                    border-radius: 55px;
+    
+                    svg {
+                        fill: #8624dc;
+                        width: 20px;
+                    }
+                }
+                h2 {
+                    font-weight: bold;
+                    padding: 10px 0 0 20px;
+                }
             }
         }
     }
@@ -108,7 +216,7 @@
 
         .tile_title {
             display: flex;
-            padding-bottom: 30px;
+            padding-bottom: 5px;
 
             span {
                 padding: 10px 12px;
@@ -189,7 +297,6 @@
         padding-right: 5px;
         background-color: #fff;
         margin-right: 10px;
-        text-align: center;
 
         .tile_title {
             display: flex;
@@ -209,6 +316,35 @@
             h2 {
                 font-weight: bold;
                 padding: 10px 0 0 20px;
+            }
+        }
+
+        .point {
+            h3 {
+                font-weight: 600;
+                margin: 10px 0 50px;
+                font-size: 30px;
+                color: #637677;
+            }
+
+            p {
+                margin-bottom: 20px;
+
+                span {
+                font-weight: 600;
+                color: #637677;
+                }
+            }
+
+            button {
+                border-radius: 8px;
+                margin-bottom: 5px;
+                background-color: #637677;
+                padding: 9px;
+                color: #fff;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 15px;
             }
         }
     }

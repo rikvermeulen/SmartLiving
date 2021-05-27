@@ -1,3 +1,5 @@
+import Chart from "./Chart";
+
 const Tiles = () => {
     return (
         <div className="tiles">
@@ -53,6 +55,9 @@ const Tiles = () => {
                                 <svg viewBox="0 0 11.009 19.264"><g transform="translate(-119.994 219.264) rotate(-90)"><path d="M209.632,127.707l-7.263-7.3a1.381,1.381,0,0,0-1.963,0,1.4,1.4,0,0,0,0,1.976l8.175,8.22a1.574,1.574,0,0,0,2.1,0l8.175-8.22a1.4,1.4,0,0,0,0-1.976,1.381,1.381,0,0,0-1.963,0Z" transform="translate(0)" /></g></svg>
                              </a>
                         </div>
+                        <div>
+                        <Chart/>
+                        </div>
                         <div className="graph_info">
                             <div id="electricity">
                                 <span></span>
@@ -75,12 +80,11 @@ const Tiles = () => {
                             <span><svg xmlns="http://www.w3.org/2000/svg" width="18.514" height="22.021" viewBox="0 0 18.514 22.021"><g id="Coin-ada-big" transform="translate(-27.491 -9.6)"><path id="Path_24" data-name="Path 24" d="M46,22.881a.974.974,0,0,0-.993-.887H42.2l-.768-1.947H43.17a.973.973,0,0,0,.993-.887.92.92,0,0,0-.914-.967H40.707l-3.178-8.011a.925.925,0,0,0-.861-.583.953.953,0,0,0-.861.583l-3.046,8H30.273a.973.973,0,0,0-.993.887.92.92,0,0,0,.914.967h1.814l-.742,1.933H28.485a.973.973,0,0,0-.993.887.92.92,0,0,0,.914.967h2.132l-2.489,6.462a.934.934,0,0,0,.53,1.2.672.672,0,0,0,.318.053.912.912,0,0,0,.861-.583l2.754-7.124h8.382l2.86,7.2a.888.888,0,0,0,.861.583,1.55,1.55,0,0,0,.344-.053.917.917,0,0,0,.5-1.2l-2.6-6.515h2.105A.965.965,0,0,0,46,22.881Zm-9.3-9.772,2,5.072H34.762l1.947-5.072Zm-3.443,8.885.742-1.947H39.4l.768,1.947h-6.9Z" transform="translate(0)"/></g></svg></span>
                             <h2>Punten</h2>
                         </div>    
-                        <div class="quest gas-trans">
-                            <div class="hide_quest"> U kunt de punten inwisselen voor leuke prijzen! </div>
-                                <p className="quest_points_gas">Aantal punten:<br></br><span>300</span></p>
-                                    <button class="quest_button gas">Inwisselen</button>
-                                    <div class="arrow"></div>
-                            </div>                   
+                        <div class="point">
+                            <h3>U kunt de punten inwisselen voor leuke prijzen! </h3>
+                                <p className="points">Aantal punten: <br></br><span> 300</span></p>
+                                <button class="gas">Inwisselen</button>
+                        </div>                   
                         </div>
                         <div className="tile4x4" id="tile4x4Right">
                             <div className="tile_title">

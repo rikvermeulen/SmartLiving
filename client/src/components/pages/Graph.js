@@ -13,7 +13,7 @@ function Graph() {
           <div className="tiles">
               <div className="tilesContainer-full" id="tilesContainerLeft">
                   <div className="tile-full">
-               
+                    <Chart/>
                   </div>
               </div>
           </div>
