@@ -55,7 +55,7 @@ const Tiles = () => {
                                 <svg viewBox="0 0 11.009 19.264"><g transform="translate(-119.994 219.264) rotate(-90)"><path d="M209.632,127.707l-7.263-7.3a1.381,1.381,0,0,0-1.963,0,1.4,1.4,0,0,0,0,1.976l8.175,8.22a1.574,1.574,0,0,0,2.1,0l8.175-8.22a1.4,1.4,0,0,0,0-1.976,1.381,1.381,0,0,0-1.963,0Z" transform="translate(0)" /></g></svg>
                              </a>
                         </div>
-                        <div>
+                        <div id="chart-home">
                         <Chart/>
                         </div>
                         <div className="graph_info">

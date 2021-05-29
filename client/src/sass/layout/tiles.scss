@@ -177,21 +177,24 @@
 
         .tile_title {
             display: flex;
-            padding-bottom: 30px;
+            padding-bottom: 10px;
 
             span {
-                padding: 10px 12px;
+                padding: 4px 7px;
                 background-color: #f7edff;
                 border-radius: 55px;
 
                 svg {
+                    margin-top: 1px;
+                    margin-left: 1px;
                     fill: #8624dc;
-                    width: 20px;
+                    width: 17px;
                 }
             }
             h2 {
                 font-weight: bold;
-                padding: 10px 0 0 20px;
+                padding: 5px 0 0 10px;
+                font-size: calc(.02909*100vw + -10.09091px);
             }
 
         }
@@ -219,18 +222,21 @@
             padding-bottom: 5px;
 
             span {
-                padding: 10px 12px;
-                background-color: #fff2ee;;
+                padding: 4px 7px;
+                background-color: #fff2ee;
                 border-radius: 55px;
 
                 svg {
+                    margin-top: 1px;
+                    margin-left: 1px;
                     fill: #ff9066;
-                    width: 20px;
+                    width: 17px;
                 }
             }
             h2 {
                 font-weight: bold;
-                padding: 10px 0 0 20px;
+                padding: 5px 0 0 10px;
+                font-size: calc(.02909*100vw + -10.09091px);
             }
 
         }
@@ -238,7 +244,11 @@
         .graph_schedule {
             position: absolute;
             right: 20px;
-            top: 30px;
+            top: 22px;
+
+            a {
+                font-size: 14px;
+            }
 
 
             svg {
@@ -262,12 +272,13 @@
                     padding: 6px 9px;
                     border-radius: 50px;
                     height: 9px;
-                    margin-top: 9px;
+                    margin-top: 5px;
                 }
 
                 p {
                     padding-left: 10px;
                     color: #a2acb8;
+                    font-size: 14px;
                 }
 
             }
@@ -290,6 +301,8 @@
         h2 {
             font-weight: bold;
             color: #000;
+            padding: 10px 0 0 10px;
+            font-size: calc(.02909*100vw + -10.09091px);
         }
     }
 
@@ -300,35 +313,39 @@
 
         .tile_title {
             display: flex;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
             text-align: center;
 
             span {
-                padding: 10px 12px;
+                padding: 4px 7px;
                 background-color: #f3fdfe;
                 border-radius: 55px;
 
                 svg {
+                    margin-top: 1px;
+                    margin-left: 1px;
                     fill: #637677;
-                    width: 20px;
+                    width: 17px;
                 }
             }
             h2 {
                 font-weight: bold;
-                padding: 10px 0 0 20px;
+                padding: 5px 0 0 10px;
+                font-size: calc(.02909*100vw + -10.09091px);
             }
         }
 
         .point {
             h3 {
                 font-weight: 600;
-                margin: 10px 0 50px;
-                font-size: 30px;
+                margin: 0 0 5%;
+                font-size: calc(.02909*100vw + -10.09091px);
                 color: #637677;
             }
 
             p {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+                font-size: calc(.02909*100vw + -16.09091px);
 
                 span {
                 font-weight: 600;
@@ -355,21 +372,24 @@
 
         .tile_title {
             display: flex;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
 
             span {
-                padding: 10px 12px;
-                background-color: #f7edff;
+                padding: 4px 7px;
+                background-color: #fff2ee;
                 border-radius: 55px;
 
                 svg {
-                    fill: #8624dc;
-                    width: 20px;
+                    margin-top: 1px;
+                    margin-left: 1px;
+                    fill: #ff9066;
+                    width: 17px;
                 }
             }
             h2 {
                 font-weight: bold;
-                padding: 10px 0 0 20px;
+                padding: 5px 0 0 10px;
+                font-size: calc(.02909*100vw + -10.09091px);
             }
         }
     }
