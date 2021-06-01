@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { CSSTransition } from "react-transition-group";
-
+import {NavLink} from 'react-router-dom'
 
 const Modal = props => {
   const closeOnEscapeKeyDown = e => {
@@ -26,14 +26,21 @@ const Modal = props => {
       <div className="modal" onClick={props.onClose}>
         <div className="modal-content" onClick={e => e.stopPropagation()}>
           <div className="modal-header">
-            <h4 className="modal-title">{props.title}</h4>
+            <h2 className="modal-title"><b>Gebruik de wasmachine minder</b></h2>
           </div>
-          <div className="modal-body">{props.children}</div>
-          <div className="modal-footer">
+          <div className="modal-body">
+            Een wasmachine gebruikt gemiddeld 80 liter wate. Door alleen de wasmachine te gebruiken wanneer deze echt vol zit kan u op lange termijn vele liters water besparen. <br/>
+            <br/>
+            Daarnaast kost het 0,35 kWh aan stroom om een was van 40 graden te draaien hiermee kunt u 4 maal 1 liter water koken, warmere wasbeurten verbruiken nog meer energie.
+          
             <div onClick={props.onClose} className="close-container">
-            <div class="leftright"></div>
-            <div class="rightleft"></div>
+              <div class="leftright"></div>
+              <div class="rightleft"></div>
             </div>
+          </div>
+          <div className="modal-footer">
+            <button className= "modal_button" >verzilveren</button>
+            <NavLink className="modal_button" exact={true} to = "/points">naar punten</NavLink>
           </div>
         </div>
       </div>

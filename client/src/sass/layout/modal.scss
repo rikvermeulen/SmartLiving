@@ -30,7 +30,6 @@
 
   padding: 30px;
   background-color: #fff;
-  color: #000;
   border-radius: 10px;
   box-shadow: 1px 0px 0px 0px #f6f6f7;
 }
@@ -54,4 +53,16 @@
 
 .modal-body {
   padding: 10px;
+}
+
+.modal_button{
+  color: #fff;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  background-color: #6495ED;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+  font: 15px Arial, sans-serif;
+  cursor:pointer;
 }

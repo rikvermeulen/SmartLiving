@@ -1,5 +1,5 @@
-$softorange: #F4A259;
-$tomatored: #F25C66;
+$softblue: #6495ED;
+$darkblue: #22478b;
 $mediumblu: #1E272D;
 
 .close-container{
@@ -16,7 +16,7 @@ $mediumblu: #1E272D;
   width: 40px;
   position: absolute;
   margin-top: 24px;
-  background-color: $softorange;
+  background-color: $softblue;
   border-radius: 2px;
   transform: rotate(45deg);
   transition: all .3s ease-in;
@@ -27,7 +27,7 @@ $mediumblu: #1E272D;
   width: 40px;
   position: absolute;
   margin-top: 24px;
-  background-color: $softorange;
+  background-color: $softblue;
   border-radius: 2px;
   transform: rotate(-45deg);
   transition: all .3s ease-in;
@@ -39,9 +39,9 @@ $mediumblu: #1E272D;
 
 .close-container:hover .leftright{
   transform: rotate(-45deg);
-  background-color: $tomatored;
+  background-color: $darkblue;
 }
 .close-container:hover .rightleft{
   transform: rotate(45deg);
-  background-color: $tomatored;
+  background-color: $darkblue;
 }
