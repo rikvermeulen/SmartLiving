@@ -1,0 +1,19 @@
+.chart {
+    padding: 0 20px;
+
+    .chart_data {
+        width: 100%;
+
+        canvas {
+        }
+    }
+}
+
+#chart-home {
+    .chart_data {
+
+        canvas {
+            max-height: 140px;
+        }
+    }
+}
