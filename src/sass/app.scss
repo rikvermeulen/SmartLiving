@@ -9,6 +9,7 @@
 
 //components
   @import 'components/buttons';
+  @import 'components/closebutton';
 
 //layout
   @import 'layout/header';
@@ -16,6 +17,7 @@
   @import 'layout/tiles';
   @import 'layout/challenges';
   @import 'layout/aside';
+  @import 'layout/modal';
 
 //page
   @import 'pages/app';

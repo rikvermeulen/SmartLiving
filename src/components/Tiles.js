@@ -1,4 +1,8 @@
+import React, { useState } from "react";
+import Modal from './Modal.js'
+
 const Tiles = () => {
+    const [show, setShow] = useState(false);
     return (
         <div className="tiles">
             <div className="tilesContainer" id="tilesContainerLeft">
@@ -14,7 +18,10 @@ const Tiles = () => {
                         <div className="bar">
                             <div className="filling gas"></div>
                         </div>
-                        <button className="quest_button gas">Claimen</button>
+                        <button className="quest_button gas" onClick={() => setShow(true)}>Claimen</button>
+                            <Modal title="My Modal" onClose={() => setShow(false)} show={show}>
+                                <p>This is modal body</p>
+                            </Modal>
                         <div className="arrow"></div>
                     </div>
 
@@ -25,8 +32,11 @@ const Tiles = () => {
                         <div class="bar">
                             <div class="filling water"></div>
                         </div>
-                        <button class="quest_button water">Claimen</button>
-                        <div class="arrow"></div>
+                        <button className="quest_button water" onClick={() => setShow(true)}>Claimen</button>
+                            <Modal title="My Modal" onClose={() => setShow(false)} show={show}>
+                                <p>This is modal body</p>
+                            </Modal>
+                        <div className="arrow"></div>
                     </div>
                 </div>
             </div>
