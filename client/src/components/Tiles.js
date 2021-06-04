@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from './Modal.js'
 import Chart from "./Chart";
+import Ripplebutton from "./Ripplebutton/Ripplebutton"
 
 const Tiles = () => {
     const [show, setShow] = useState(false);
@@ -24,6 +25,7 @@ const Tiles = () => {
                                 <p>This is modal body</p>
                             </Modal>
                         <div className="arrow"></div>
+                        <Ripplebutton></Ripplebutton>
                     </div>
 
                     <div class="quest water-trans">

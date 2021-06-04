@@ -1,0 +1,40 @@
+$animatin-duration: 700ms;
+
+.RippleAnimation_container{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.RippleButton_container{
+    background-color: #6495ED;
+    border: none;
+    border-radius: 0.25em;
+    padding: 1em;
+    color: white;
+    font-size: 12pt;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    .ripple{
+        background-color: #224380;
+        border-radius: 50%;
+        pointer-events: none;
+        position: absolute;
+        transform: scale(0);
+        z-index: 1;
+    }
+    div{
+        z-index: 2;
+    }
+
+    .ripple-active{
+        transform: scale(2);
+        transition: transform $animatin-duration, opacity $animatin-duration;
+        opacity: 0;
+    }
+
+    .ripple-start {
+        transform: scale(2);
+    }
+}
