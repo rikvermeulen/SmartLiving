@@ -7,7 +7,7 @@
 
         .tile4x2 {
             display: block;
-            padding: 20px;
+            padding: 15px;
             width: calc(100% - 10px);
             height: calc(20vh - 5px);
             margin-bottom: 10px;
@@ -18,19 +18,32 @@
     
             .title {
                 position: relative;
-
-                h3 {
-                    font-weight: 600;
-                    color: #637677;
-                }
+                height: 25px;
 
                 img {
                     position: absolute;
-                    right: 5px;
-                    top: 5px;
-                    width: 5%;
+                    left: 5px;
+                    
+                    width: 8%;
                 }
 
+                svg {
+                    position: absolute;
+                    right: 5px;
+                    top: 3px;
+                    width: 5px;
+                }
+
+            }
+
+            h3 {
+                font-weight: 600;
+                color: #637677;
+                font-size: calc(.02909*100vw + -14.09091px);
+            }
+
+            p {
+                font-size: calc(.02909*100vw + -20.09091px);
             }
 
             .button {
@@ -38,13 +51,13 @@
 
                 button {
                     border-radius: 8px;
-                    margin-bottom: 5px;
+                    margin-top: 6px;
                     background-color: #637677;
-                    padding: 15px 30px;
+                    padding: 7px 15px;
                     color: #fff;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    font-size: 15px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    font-size: 12px;
                 }
             }
         }
@@ -64,6 +77,10 @@
                 font-weight: bold;
                 color: #000;
             }
+
+            h3 {
+            
+            }
         }
 
         #tile4x4Left {
@@ -73,34 +90,36 @@
     
             .tile_title {
                 display: flex;
-                padding-bottom: 30px;
+                padding-bottom: 20px;
                 text-align: center;
     
                 span {
-                    padding: 10px 12px;
+                    padding: 4px 7px;
                     background-color: #f3fdfe;
                     border-radius: 55px;
     
                     svg {
                         fill: #637677;
-                        width: 20px;
+                        width: 17px;
                     }
                 }
                 h2 {
-                    font-weight: bold;
+                    font-weight: 500;
                     padding: 10px 0 0 20px;
+                    font-size: calc(.02909*100vw + -10.09091px);
                 }
             }
     
             .point {
                 h3 {
+                    font-size: calc(.02909*100vw + -14.09091px);
                     font-weight: 600;
-                    margin: 10px 0 50px;
-                    font-size: 30px;
+                    margin: 0 0 20px;
                     color: #637677;
                 }
     
                 p {
+                    font-size: calc(.02909*100vw + -14.09091px);
                     margin-bottom: 20px;
     
                     span {
@@ -128,21 +147,22 @@
     
             .tile_title {
                 display: flex;
-                padding-bottom: 30px;
+                padding-bottom: 20px;
     
                 span {
-                    padding: 10px 12px;
+                    padding: 6px 7px;
                     background-color: #f7edff;
                     border-radius: 55px;
     
                     svg {
                         fill: #8624dc;
-                        width: 20px;
+                        width: 17px;
                     }
                 }
                 h2 {
-                    font-weight: bold;
+                    font-weight: 500;
                     padding: 10px 0 0 20px;
+                    font-size: calc(.02909*100vw + -10.09091px);
                 }
             }
         }
@@ -154,18 +174,70 @@
 
 
         .tile-full {
-            padding: 20px;
+            display: block;
+            padding: 0 20px;
             width: 100%;
-            background-color: #fff;
             color: #000;
             height: calc(80vh + 10px);
             border-radius: 25px;
             box-shadow: 1px 0px 0px 0px #f6f6f7;
+
+            .react-tabs {
+
+                .react-tabs__tab-list {
+                    margin-bottom: 0;
+                    border: none;
+
+                    .react-tabs__tab {
+                        border: none;
+                        background: #dfdfdf;
+                        border-radius: 5px 5px 0 0;
+                        margin-right: 4px;
+                        padding: 8px 18px;
+                    }
+
+                    .react-tabs__tab--selected {
+                        background: #ffffff;
+                        color: #ff9066;;
+                        font-weight: 900;
+                    }
+                }
+                
+                .react-tabs__tab-panel {
+                    background-color: #fff;
+                    padding: 20px 40px;
+                    border-radius: 0 10px 10px 10px;
+                }
+            }
+
+            .tile_title {
+                display: flex;
+                padding-bottom: 20px;
+    
+                span {
+                    padding: 4px 7px;
+                    background-color: #fff2ee;
+                    border-radius: 55px;
+    
+                    svg {
+                        margin-top: 1px;
+                        margin-left: 1px;
+                        fill: #ff9066;
+                        width: 17px;
+                    }
+                }
+                h2 {
+                    font-weight: bold;
+                    padding: 5px 0 0 10px;
+                    font-size: calc(.02909*100vw + -10.09091px);
+                }
+    
+            }
         }
     }
 
     .tilesContainer {
-        width: 50%;
+        width: 40%;
         height: 100%;
 
     .tile8x8 {
@@ -195,9 +267,9 @@
                 }
             }
             h2 {
-                font-weight: bold;
+                font-weight: 500;
                 padding: 5px 0 0 10px;
-                font-size: calc(.02909*100vw + -10.09091px);
+                font-size: calc(.02909*100vw + -14.09091px);
             }
 
         }
@@ -214,7 +286,7 @@
     .tile8x4 {
         display: block;
         padding: 20px;
-        width: 100%;
+        width: 65%;
         height: 40vh;
         border-radius: 25px;
         position: relative;
@@ -238,9 +310,9 @@
                 }
             }
             h2 {
-                font-weight: bold;
+                font-weight: 500;
                 padding: 5px 0 0 10px;
-                font-size: calc(.02909*100vw + -10.09091px);
+                font-size: calc(.02909*100vw + -14.09091px);
             }
 
         }
@@ -251,7 +323,7 @@
             top: 22px;
 
             a {
-                font-size: 14px;
+                font-size: 12px;
             }
 
 
@@ -260,6 +332,26 @@
                 width: 10px;
                 margin-left: 10px;
                 transform: rotate(90deg);
+            }
+        }
+
+        .graph_date {
+            display: flex;
+            align-items: center;   
+            justify-content: center;
+
+            ul {
+                display: flex;
+                position: relative;
+                padding-left: 34px;
+                
+                li {
+                    color: #a2acb8;
+                    font-size: 12px;
+                    padding: 0 20px 0 0;
+                }
+
+
             }
         }
 
@@ -273,16 +365,16 @@
                 padding-right: 10px;
 
                 span {
-                    padding: 6px 9px;
+                    padding: 4px 6px;
                     border-radius: 50px;
                     height: 9px;
-                    margin-top: 5px;
+                    margin-top: 3px;
                 }
 
                 p {
                     padding-left: 10px;
                     color: #a2acb8;
-                    font-size: 14px;
+                    font-size: 12px;
                 }
 
             }
@@ -304,7 +396,7 @@
         box-shadow: 1px 0px 0px 0px #f6f6f7;
 
         h2 {
-            font-weight: bold;
+            font-weight: 500;
             color: #000;
             padding: 10px 0 0 10px;
             font-size: calc(.02909*100vw + -10.09091px);
@@ -334,9 +426,9 @@
                 }
             }
             h2 {
-                font-weight: bold;
+                font-weight: 500;
                 padding: 5px 0 0 10px;
-                font-size: calc(.02909*100vw + -10.09091px);
+                font-size: calc(.02909*100vw + -14.09091px);
             }
         }
 
@@ -375,6 +467,14 @@
         background-color: #fff;
         margin-left: 10px;
 
+        .Bitmoji {
+            text-align: center;
+        
+            img {
+                width: 57%;
+            }
+        }
+
         .tile_title {
             display: flex;
             padding-bottom: 20px;
@@ -392,9 +492,9 @@
                 }
             }
             h2 {
-                font-weight: bold;
+                font-weight: 500;
                 padding: 5px 0 0 10px;
-                font-size: calc(.02909*100vw + -10.09091px);
+                font-size: calc(.02909*100vw + -14.09091px);
             }
         }
     }
@@ -411,6 +511,7 @@
     .tilesInnerContainer:nth-child(2) {
         padding-top: 10px;
         display: flex;
+        width: 65%;
       }
 }
 }

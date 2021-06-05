@@ -5,6 +5,9 @@ import Aside from "./components/Aside"
 import Tiles from "./components/Tiles"
 
 function App() {
+  useEffect(() => {
+    document.title = "Dashboard"
+  }, [])
   return (
     <div className="home">
       <Aside/>

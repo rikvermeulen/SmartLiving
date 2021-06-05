@@ -9,13 +9,10 @@ aside {
         text-align: center;
 
         img {
-            width: 60%;
-        }
-
-        p {
-            color: #a2acb8;
-            padding-top: 10px;
-            font-size: 14px;
+            border-radius: 8px;
+            width: 85%;
+            background-color: transparent;
+            box-shadow: #efefef 3px 4px 8px;
         }
     }
 
@@ -45,7 +42,7 @@ aside {
                 }
 
                 .active {
-                    color: #8624dc;
+                    color: #8624dc !important;
                     font-weight: bold;
 
                     hr {
@@ -57,7 +54,7 @@ aside {
                     }
 
                     svg {
-                        fill: #8624dc;
+                        fill: #8624dc !important;
                     }
                 }
             }

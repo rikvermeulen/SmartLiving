@@ -1,11 +1,10 @@
 import Clock from 'react-live-clock';
-import Toggle from "./style/Toggler"
+import Toggle from "./style/Toggler";
 
 import {ThemeProvider} from "styled-components";
 import { GlobalStyles } from "./style/Globalstyles";
 import { lightTheme, darkTheme } from "./style/Themes";
 import  {useDarkMode} from "./style/useDarkMode";
-
 
 const Header = () => {
     const [theme, themeToggler, mountedComponent] = useDarkMode();
@@ -19,7 +18,7 @@ const Header = () => {
             <nav>
             <ul className="navLeft">
                     <li>
-                        <h1>Dashboard</h1>
+                        <h1>{document.title}</h1>
                     </li>
                 </ul>
                 <ul className="navRight">

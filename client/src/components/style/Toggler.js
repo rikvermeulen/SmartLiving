@@ -7,14 +7,20 @@ const Button = styled.button`
   border-radius: 30px;
   cursor: pointer;
   font-size:0.8rem;
-  padding: 2px 4px;
   margin: 0 12px;
+
+  background-image: url("./images/moon.png");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: center;
+  padding: 4px 12px;
   }
 `;
 const Toggle = ({theme,  toggleTheme }) => {
     return (
         <Button onClick={toggleTheme} >
-          Switch Theme
+          <img src=""/>
         </Button>
     );
 };

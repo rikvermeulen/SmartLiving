@@ -4,8 +4,7 @@ const Aside = () => {
     return (
         <aside>
             <div className="profile">
-                <img src="images/man.png" /> 
-                <p>User name</p>
+                <img src="images/logo.png" /> 
             </div>
             <header>
                 <nav>
