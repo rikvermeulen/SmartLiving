@@ -1,5 +1,5 @@
 export const lightTheme = {
-    body: '#f5faff',
+    body: '#f4f8fb;',
     text: '#363537',
     greytowhite: '#c9ccd0',
     toggleBorder: '#FFF',
@@ -9,6 +9,7 @@ export const lightTheme = {
     shadow: '1px 0px 0px 0px #f6f6f7',
     image: './images/moon.png',
     headersvg: '#000',
+    time: '#a2acb8',
 }
 export const darkTheme = {
     body: '#616161',
@@ -21,4 +22,5 @@ export const darkTheme = {
     shadow: '1px 0px 0px 0px #d0d0d0',
     image: './images/sun.png',
     headersvg: '#fff',
+    time: '#fff',
 }

@@ -118,6 +118,57 @@ const Tiles = () => {
                     </tile4x4>
                 </div>        
             </div>   
+            <asidehome className="aside-home">
+                <h3>Ons huis</h3>
+                <div className="temp">
+                    <div className="temp-info">
+                        <h4>Temperatuur</h4>
+                        <p>20<span>.</span>5<span>°</span></p>
+                    </div>
+                    <div className="temp-control">
+                        <button><svg viewBox="0 0 11.009 19.264"><g transform="translate(-119.994 219.264) rotate(-90)"><path d="M209.632,127.707l-7.263-7.3a1.381,1.381,0,0,0-1.963,0,1.4,1.4,0,0,0,0,1.976l8.175,8.22a1.574,1.574,0,0,0,2.1,0l8.175-8.22a1.4,1.4,0,0,0,0-1.976,1.381,1.381,0,0,0-1.963,0Z" transform="translate(0)" /></g></svg></button>
+                        <button><svg viewBox="0 0 11.009 19.264"><g transform="translate(-119.994 219.264) rotate(-90)"><path d="M209.632,127.707l-7.263-7.3a1.381,1.381,0,0,0-1.963,0,1.4,1.4,0,0,0,0,1.976l8.175,8.22a1.574,1.574,0,0,0,2.1,0l8.175-8.22a1.4,1.4,0,0,0,0-1.976,1.381,1.381,0,0,0-1.963,0Z" transform="translate(0)" /></g></svg></button>
+                    </div>
+                </div>
+                <div className="temp-pre">
+                    <div className="temp-pre-item">
+                        <p>14<span>.</span>0<span>°</span></p>
+                        <p>Weg</p>
+                    </div>
+                    <div className="temp-pre-item">
+                        <p>19<span>.</span>0<span>°</span></p>
+                        <p>Thuis</p>
+                    </div>
+                    <div className="temp-pre-item">
+                        <p>17<span>.</span>0<span>°</span></p>
+                        <p>Slapen</p>
+                    </div>
+                    <div className="temp-pre-item selected">
+                        <p>20<span>.</span>5<span>°</span></p>
+                        <p>Comfort</p>
+                    </div>
+                </div>
+                <div className="friends">
+                    <h3>Vrienden</h3>
+                    <ul>
+                        <li>
+                            <img src="./images/profile-two.png"/>
+                            <p>Perry</p>
+                            <svg viewBox="0 0 11.009 19.264"><g transform="translate(-119.994 219.264) rotate(-90)"><path d="M209.632,127.707l-7.263-7.3a1.381,1.381,0,0,0-1.963,0,1.4,1.4,0,0,0,0,1.976l8.175,8.22a1.574,1.574,0,0,0,2.1,0l8.175-8.22a1.4,1.4,0,0,0,0-1.976,1.381,1.381,0,0,0-1.963,0Z" transform="translate(0)" /></g></svg>
+                        </li>
+                        <li>
+                            <img src="./images/profile-three.png"/>
+                            <p>Perry</p>
+                            <svg viewBox="0 0 11.009 19.264"><g transform="translate(-119.994 219.264) rotate(-90)"><path d="M209.632,127.707l-7.263-7.3a1.381,1.381,0,0,0-1.963,0,1.4,1.4,0,0,0,0,1.976l8.175,8.22a1.574,1.574,0,0,0,2.1,0l8.175-8.22a1.4,1.4,0,0,0,0-1.976,1.381,1.381,0,0,0-1.963,0Z" transform="translate(0)" /></g></svg>
+                        </li>
+                        <li>
+                            <img src="./images/profile-four.png"/>
+                            <p>Perry</p>
+                            <svg viewBox="0 0 11.009 19.264"><g transform="translate(-119.994 219.264) rotate(-90)"><path d="M209.632,127.707l-7.263-7.3a1.381,1.381,0,0,0-1.963,0,1.4,1.4,0,0,0,0,1.976l8.175,8.22a1.574,1.574,0,0,0,2.1,0l8.175-8.22a1.4,1.4,0,0,0,0-1.976,1.381,1.381,0,0,0-1.963,0Z" transform="translate(0)" /></g></svg>
+                        </li>
+                    </ul>
+                </div>
+            </asidehome>
         </div>
     )
 }

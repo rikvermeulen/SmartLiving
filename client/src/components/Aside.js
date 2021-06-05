@@ -1,8 +1,9 @@
 import {NavLink} from 'react-router-dom'
+import Clock from 'react-live-clock';
 
 const Aside = () => {
     return (
-        <aside>
+        <aside className="aside-menu">
             <div className="profile">
                 <img src="images/logo.png" /> 
             </div>
@@ -17,6 +18,9 @@ const Aside = () => {
                     </ul>
                 </nav>
             </header>
+            <div className="time">
+                <p><Clock format={'HH:mm'} ticking={true} /></p>
+            </div>
         
         </aside>
     )

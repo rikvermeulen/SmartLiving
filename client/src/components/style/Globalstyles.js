@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   aside>div>p {
-    color: ${({ theme }) => theme.text} !important;
+    color: ${({ theme }) => theme.time} !important;
     }
 
   h2 {
