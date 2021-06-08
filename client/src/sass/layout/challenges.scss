@@ -46,6 +46,9 @@
 		margin-bottom: 10px;
 		transition: all 1s;
 	  }
+	  .quest:hover .ripple-button{
+		  display: block;
+	  }
 	  .quest:hover .quest_button{
 		display: block;
 		transition: all 1s;
@@ -66,6 +69,7 @@
 		background-color: #e2e2e2;
 		border-radius: 10px;
 		padding: 3px;
+		margin-bottom: 10px;
 	  }
 	  
 	  .filling{
@@ -79,10 +83,8 @@
 		border-radius: 8px;
 		margin-bottom: 5px;
 		background-color: #8624dc;
-		padding: 9px;
+		padding: 10px;
 		color: #fff;
-		padding-left: 10px;
-		padding-right: 10px;
 		font-size: 15px;
 	  }
 	  .water{
@@ -104,13 +106,6 @@
 	  .gas-trans{
 		background-color:	#dde8e9;
 	  }
-	//   .line{
-	// 	width: 80%;
-	// 	height: 1px;
-	// 	background-color:	#b3b3b3;
-	// 	margin-left: 10%;
-	// 	margin-bottom: 5px;
-	//   }
 	  
 	  .arrow {
 		display: inline-block;

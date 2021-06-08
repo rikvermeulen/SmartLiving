@@ -1,40 +1,71 @@
-$animatin-duration: 700ms;
-
-.RippleAnimation_container{
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
-.RippleButton_container{
-    background-color: #6495ED;
+.ripple-button {
+    border-radius: 8px;
     border: none;
-    border-radius: 0.25em;
-    padding: 1em;
-    color: white;
-    font-size: 12pt;
-    cursor: pointer;
-    position: relative;
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: #1976d2;
+    color: #fff;
     overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: none;
+  }
+  .ripple-button-modal{
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: #1976d2;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  .ripple-button:active{
+    transform: scale(95%);
+  }
+  .ripple-button-modal:active{
+    transform: scale(95%);
+  }
 
-    .ripple{
-        background-color: #224380;
-        border-radius: 50%;
-        pointer-events: none;
-        position: absolute;
-        transform: scale(0);
-        z-index: 1;
+  .ripple-button > .ripple {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #ffffff6e;
+    content: "";
+    border-radius: 9999px;
+    opacity: 1;
+    animation: 0.9s ease 1 forwards ripple-effect;
+  }
+  .ripple-button-modal > .ripple{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #ffffff6e;
+    content: "";
+    border-radius: 9999px;
+    opacity: 1;
+    animation: 0.9s ease 1 forwards ripple-effect;
+  }
+  
+  @keyframes ripple-effect {
+    0% {
+      transform: scale(1);
+      opacity: 1;
     }
-    div{
-        z-index: 2;
+    50% {
+      transform: scale(10);
+      opacity: 0.375;
     }
-
-    .ripple-active{
-        transform: scale(2);
-        transition: transform $animatin-duration, opacity $animatin-duration;
-        opacity: 0;
+    100% {
+      transform: scale(35);
+      opacity: 0;
     }
-
-    .ripple-start {
-        transform: scale(2);
-    }
-}
+  }
+  
+  .ripple-button > .content {
+    position: relative;
+  }

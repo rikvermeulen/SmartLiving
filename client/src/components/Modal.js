@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { CSSTransition } from "react-transition-group";
 import {NavLink} from 'react-router-dom'
+import RippleButton from "./Buttons/Ripplebutton"
 
 const Modal = props => {
   const closeOnEscapeKeyDown = e => {
@@ -39,8 +40,8 @@ const Modal = props => {
             </div>
           </div>
           <div className="modal-footer">
-            <button className= "modal_button" >verzilveren</button>
-            <NavLink className="modal_button" exact={true} to = "/points">naar punten</NavLink>
+            <RippleButton>Verzilveren</RippleButton>
+            <NavLink exact={true} to='points'><RippleButton>Naar punten</RippleButton></NavLink>
           </div>
         </div>
       </div>

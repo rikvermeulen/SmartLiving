@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import Modal from './Modal.js'
 import Chart from "./Chart";
-import Ripplebutton from "./Ripplebutton/Ripplebutton"
+import RippleButtonGas from "./Buttons/Ripplebuttongas"
+import RippleButtonElektric from "./Buttons/Ripplebuttonelektric"
+import RippleButtonWater from "./Buttons/Ripplebuttonwater"
+
 
 const Tiles = () => {
     const [show, setShow] = useState(false);
@@ -14,18 +17,18 @@ const Tiles = () => {
                         <h2>Challenges</h2>
                     </div>
                     <div className="quest elektric-trans">
+                                          
                         <h3 className="quest_header"><span>Elektriciteit</span></h3>
                         <p className="quest_points_elektric">Totaal aantal punten te behalen: <span>300</span></p>
                         <div className="hide_quest"> Gebruik de wasmachine minder. </div>
                         <div className="bar">
                             <div className="filling elektric"></div>
                         </div>
-                        <button className="quest_button elektric" onClick={() => setShow(true)}>Claimen</button>
+                        <RippleButtonElektric onClick={() => setShow(true)}>Claimen</RippleButtonElektric>
                             <Modal title="My Modal" onClose={() => setShow(false)} show={show}>
                                 <p>This is modal body</p>
                             </Modal>
                         <div className="arrow"></div>
-                        <Ripplebutton></Ripplebutton>
                     </div>
 
                     <div class="quest water-trans">
@@ -35,7 +38,7 @@ const Tiles = () => {
                         <div class="bar">
                             <div class="filling water"></div>
                         </div>
-                        <button className="quest_button water" onClick={() => setShow(true)}>Claimen</button>
+                        <RippleButtonWater onClick={() => setShow(true)}>Claimen</RippleButtonWater>
                             <Modal title="My Modal" onClose={() => setShow(false)} show={show}>
                                 <p>This is modal body</p>
                             </Modal>
@@ -49,8 +52,11 @@ const Tiles = () => {
                         <div class="bar">
                             <div class="filling gas"></div>
                         </div>
-                        <button class="quest_button gas">Claimen</button>
-                        <div class="arrow"></div>
+                        <RippleButtonGas onClick={() => setShow(true)}>Claimen</RippleButtonGas>
+                            <Modal title="My Modal" onClose={() => setShow(false)} show={show}>
+                                <p>This is modal body</p>
+                            </Modal>
+                        <div className="arrow"></div>
                     </div>
                 </div>
             </div>
