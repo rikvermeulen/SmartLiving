@@ -29,18 +29,34 @@ header {
 
         .navRight {
             position: absolute;
-            top: 0;
+            top: 5px;
             right: 0;
             display: flex;
+            width: 20%;
 
-            p {
-                font-size: 16px;
-                font-weight: bold;
+            .profile {
+                display: flex;
+
+                img {
+                    border-radius: 50px;
+                    width: 30px;
+                    position: relative;
+                    top: -6px
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding-left: 6px;
+                }
             }
 
             svg {
+                position: absolute;
+                right: 0;
                 width: 15px;
-                margin-left: 15px;
+                margin-left: 10px;
+                top: 2px;
             }
         }
     }

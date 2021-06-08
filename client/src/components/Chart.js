@@ -8,6 +8,12 @@ import Graph from './pages/Graph';
 const Chart = () => {
   const [chartData, setChartData] = useState({})
   const options = {
+    elements: {
+      bar: {
+        borderRadius: 40,
+        borderSkipped: false,
+      }
+    },
     plugins: {
     legend: {
       display: false,
@@ -24,7 +30,10 @@ const Chart = () => {
   scales: {
     y: { // defining min and max so hiding the dataset does not change scale range
       min: 0,
-      max: 10
+      max: 8
+    },
+    x: {
+      display: false
     }
   }
       
@@ -37,22 +46,16 @@ const Chart = () => {
           label:'Water',
           data:[1,2,3,4,5,6,7],
           backgroundColor:['#8624dc'],
-          borderWidth: 4,
-          borderColor: '#8624dc',
         },
         {
           label:'Elektriciteit',
           data:[7,4,1,3,3,5,7],
           backgroundColor:['#ff9066'],
-          borderWidth: 4,
-          borderColor: '#ff9066',
         },
         {
           label:'Gas',
           data:[3,2,4,3,5,3,5],
           backgroundColor:['#637677'],
-          borderWidth: 4,
-          borderColor: '#637677',
         }
       ]
     })
@@ -64,7 +67,7 @@ const Chart = () => {
   return(
     <div className="chart">
       <div className="chart_data">
-        <Line data={chartData} options={options} />
+        <Bar data={chartData} options={options} />
       </div>
     </div>
   )
