@@ -1,173 +1,6 @@
 .tiles {
     display: flex;
 
-    .tilesContainer-kwart {
-        width: 25%;
-        height: 100%;
-
-        .tile4x2 {
-            display: block;
-            padding: 15px;
-            width: calc(100% - 10px);
-            height: calc(20vh - 5px);
-            margin-bottom: 10px;
-            background-color: #fff;
-            border-radius: 12px;
-            flex:1 1 auto;
-            box-shadow: 1px 0px 0px 0px #f6f6f7;
-    
-            .title {
-                position: relative;
-                height: 25px;
-
-                img {
-                    position: absolute;
-                    left: 5px;
-                    
-                    width: 8%;
-                }
-
-                svg {
-                    position: absolute;
-                    right: 5px;
-                    top: 3px;
-                    width: 5px;
-                }
-
-            }
-
-            h3 {
-                font-weight: 600;
-                color: #637677;
-                font-size: calc(.02909*100vw + -14.09091px);
-            }
-
-            p {
-                font-size: calc(.02909*100vw + -20.09091px);
-            }
-
-            .button {
-                text-align: center;
-
-                button {
-                    border-radius: 8px;
-                    margin-top: 6px;
-                    background-color: #637677;
-                    padding: 7px 15px;
-                    color: #fff;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    font-size: 12px;
-                }
-            }
-        }
-
-        .tile4x4 {
-            display: block;
-            padding: 20px;
-            margin: 0 0 10px 10px;
-            width: calc(100% - 10px);
-            height: calc(40vh);
-            background-color: rgb(255, 255, 255);
-            border-radius: 12px;
-            flex:1 1 auto;
-            box-shadow: 1px 0px 0px 0px #f6f6f7;
-    
-            h2 {
-                font-weight: bold;
-                color: #000;
-            }
-
-            h3 {
-            
-            }
-        }
-
-        #tile4x4Left {
-            padding-right: 5px;
-            background-color: #fff;
-            margin-right: 10px;
-    
-            .tile_title {
-                display: flex;
-                padding-bottom: 20px;
-                text-align: center;
-    
-                span {
-                    padding: 4px 7px;
-                    background-color: #f3fdfe;
-                    border-radius: 55px;
-    
-                    svg {
-                        fill: #637677;
-                        width: 17px;
-                    }
-                }
-                h2 {
-                    font-weight: 500;
-                    padding: 10px 0 0 20px;
-                    font-size: calc(.02909*100vw + -10.09091px);
-                }
-            }
-    
-            .point {
-                h3 {
-                    font-size: calc(.02909*100vw + -14.09091px);
-                    font-weight: 600;
-                    margin: 0 0 20px;
-                    color: #637677;
-                }
-    
-                p {
-                    font-size: calc(.02909*100vw + -14.09091px);
-                    margin-bottom: 20px;
-    
-                    span {
-                    font-weight: 600;
-                    color: #637677;
-                    }
-                }
-    
-                button {
-                    border-radius: 8px;
-                    margin-bottom: 5px;
-                    background-color: #637677;
-                    padding: 9px;
-                    color: #fff;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    font-size: 15px;
-                }
-            }
-        }
-    
-        #tile4x4Right {
-            background-color: #fff;
-            margin-left: 10px;
-    
-            .tile_title {
-                display: flex;
-                padding-bottom: 20px;
-    
-                span {
-                    padding: 6px 7px;
-                    background-color: #f7edff;
-                    border-radius: 55px;
-    
-                    svg {
-                        fill: #8624dc;
-                        width: 17px;
-                    }
-                }
-                h2 {
-                    font-weight: 500;
-                    padding: 10px 0 0 20px;
-                    font-size: calc(.02909*100vw + -10.09091px);
-                }
-            }
-        }
-    }
-
     .tilesContainer-full {
         width: 100%;
         height: 100%;
@@ -198,7 +31,7 @@
 
                     .react-tabs__tab--selected {
                         background: #ffffff;
-                        color: #ff9066;;
+                        color: $primary;
                         font-weight: 900;
                     }
                 }
@@ -216,13 +49,13 @@
     
                 span {
                     padding: 4px 7px;
-                    background-color: #fff2ee;
+                    background-color: $primary-fade;
                     border-radius: 55px;
     
                     svg {
                         margin-top: 1px;
                         margin-left: 1px;
-                        fill: #ff9066;
+                        fill: $primary;
                         width: 17px;
                     }
                 }
@@ -256,13 +89,13 @@
 
             span {
                 padding: 4px 7px;
-                background-color: #f7edff;
+                background-color: $secondary-fade;
                 border-radius: 55px;
 
                 svg {
                     margin-top: 1px;
                     margin-left: 1px;
-                    fill: #8624dc;
+                    fill: $secondary;
                     width: 17px;
                 }
             }
@@ -299,13 +132,13 @@
 
             span {
                 padding: 4px 7px;
-                background-color: #fff2ee;
+                background-color: $primary-fade;
                 border-radius: 55px;
 
                 svg {
                     margin-top: 1px;
                     margin-left: 1px;
-                    fill: #ff9066;
+                    fill: $primary;
                     width: 17px;
                 }
             }
@@ -379,9 +212,9 @@
 
             }
 
-            #electricity { span {background-color: #8624dc;}}
-            #gas{ span {background-color: #ff9066;}}
-            #water{ span {background-color: #637677;}}
+            #electricity { span {background-color: $primary;}}
+            #gas{ span {background-color: $third;}}
+            #water{ span {background-color: $secondary;}}
         }
     }
 
@@ -421,7 +254,7 @@
                 svg {
                     margin-top: 1px;
                     margin-left: 1px;
-                    fill: #637677;
+                    fill: $third;
                     width: 17px;
                 }
             }
@@ -437,7 +270,7 @@
                 font-weight: 600;
                 margin: 0 0 5%;
                 font-size: calc(.02909*100vw + -10.09091px);
-                color: #637677;
+                color: $third;
             }
 
             p {
@@ -446,7 +279,7 @@
 
                 span {
                 font-weight: 600;
-                color: #637677;
+                color: $third;
                 }
             }
 
@@ -480,13 +313,13 @@
 
             span {
                 padding: 4px 7px;
-                background-color: #fff2ee;
+                background-color: $primary-fade;
                 border-radius: 55px;
 
                 svg {
                     margin-top: 1px;
                     margin-left: 1px;
-                    fill: #ff9066;
+                    fill: $primary;
                     width: 17px;
                 }
             }

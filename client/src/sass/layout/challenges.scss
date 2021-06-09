@@ -3,6 +3,7 @@
 	  }
 	  
 	  .quest {
+		opacity: 1;
 		background-color: #f5faff;
 		width: 100%;
 		border-radius: 15px;
@@ -16,7 +17,7 @@
 		  padding-bottom: 10px;
 		  color:#000;
 		  span {
-			color:#ff9066;
+			color:$primary;
 			font-weight: bold;
 		  }
 	  }
@@ -26,7 +27,7 @@
 		padding-bottom: 10px;
 		color:#000;
 		span {
-		  color:#8624dc;
+		  color:$secondary;
 		  font-weight: bold;
 		}
 	}
@@ -36,7 +37,7 @@
 		padding-bottom: 10px;
 		color:#000;
 		span {
-		  color:#637677;
+		  color:$third;
 		  font-weight: bold;
 		}
 	}
@@ -74,13 +75,25 @@
 		height: 100%; 
 		border-radius:10px;
 	  }
+
+	  .bar>.water {
+		width: 80%;
+	  }
+
+	  .bar>.elektric {
+		width: 30%;
+	  }
+
+	  .bar>.gas {
+		width: 50%;
+	  }
 	  
 	  .quest_button{
 		cursor:pointer;
 		display: none;
 		border-radius: 8px;
 		margin-bottom: 5px;
-		background-color: #8624dc;
+		background-color: $secondary;
 		padding: 7px;
 		color: #fff;
 		margin-top: 4px;
@@ -89,23 +102,23 @@
 		font-size: 13px;
 	  }
 	  .water{
-		background-color:	#8624dc;
+		background-color:	$secondary;
 	  }
 	  .elektric{
-		background-color:	#ff9066;
+		background-color:	$primary;
 	  }
 	  .gas{
-		background-color:	#637677;
+		background-color:	$third;
 	  }
 
 	  .water-trans{
-		background-color:	#f7ecfe;
+		background-color:	$secondary-fade;
 	  }
 	  .elektric-trans{
-		background-color:	#fff2ee;
+		background-color:	$primary-fade;
 	  }
 	  .gas-trans{
-		background-color:	#dde8e9;
+		background-color:	$third-fade;
 	  }
 	//   .line{
 	// 	width: 80%;

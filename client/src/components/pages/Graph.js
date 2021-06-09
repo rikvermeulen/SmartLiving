@@ -22,7 +22,7 @@ function Graph() {
         <div className="container">
         <Header/>
           <div className="tiles">
-              <div className="tilesContainer-full" id="tilesContainerLeft">
+              <div className="tilesContainer-full">
                   <tilefull className="tile-full">
                     <Tabs>
                       <TabList>

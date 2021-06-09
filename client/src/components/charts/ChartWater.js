@@ -26,19 +26,23 @@ const ChartWater = () => {
   scales: {
     y: { // defining min and max so hiding the dataset does not change scale range
       min: 0,
-      max: 10
+      max: 1
     }
   }
       
   }
   const chartwater = () =>[
     setChartData({
-      labels: ['Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za', 'Zo'], 
+      labels: ['Ma, m3', 'Di, m3', 'Wo, m3', 'Do, m3', 'Vr, m3', 'Za, m3', 'Zo, m3'], 
       datasets:[
         {
-          label:'Water',
-          data:[1,2,3,4,5,6,7],
-          backgroundColor:['#8624dc'],
+            label:'Water',
+            data:[0.3,0.2,0.4,0.6,0.5,0.6,0.7],
+            backgroundColor:['#8624dc'],
+            barThickness: 30,
+        maxBarThickness: 30,
+      labels: ['Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za', 'Zo'], 
+      
         }
       ]
     })

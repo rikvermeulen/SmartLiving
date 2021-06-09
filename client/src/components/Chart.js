@@ -30,7 +30,7 @@ const Chart = () => {
   scales: {
     y: { // defining min and max so hiding the dataset does not change scale range
       min: 0,
-      max: 8
+      max: 6
     },
     x: {
       display: false
@@ -43,18 +43,18 @@ const Chart = () => {
       labels: ['Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za', 'Zo'], 
       datasets:[
         {
-          label:'Water',
-          data:[1,2,3,4,5,6,7],
+          label:'Water, m3',
+          data:[0.69,0.56,0.54,0.34,0.66,0.89,0.93],
           backgroundColor:['#8624dc'],
         },
         {
-          label:'Elektriciteit',
-          data:[7,4,1,3,3,5,7],
+          label:'Elektriciteit, KwH',
+          data:[6.1,5.1,5.7,4.2,5.8,6.1,6.3],
           backgroundColor:['#ff9066'],
         },
         {
-          label:'Gas',
-          data:[3,2,4,3,5,3,5],
+          label:'Gas, m3',
+          data:[0.9,0.5,0.4,0.3,0.5,0.9,0.11],
           backgroundColor:['#637677'],
         }
       ]

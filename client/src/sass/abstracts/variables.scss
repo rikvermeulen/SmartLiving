@@ -1,0 +1,98 @@
+$primary: #ff9066;
+$primary-fade: #fff2ee;
+
+$secondary: #8624dc;
+$secondary-fade: #f7ecfe;
+
+$third: #637677;
+$third-fade: #dde8e9;
+
+$grey: #a2acb8;
+$black: #000;
+
+//thema 2
+// $primary: #FED202;
+// $primary-fade: #fffcef;
+
+// $secondary: #6994FF;
+// $secondary-fade: #eaeffe;
+
+// $third: #637677;
+// $third-fade: #e5eeee;
+
+// $grey: #a2acb8;
+// $black: #000;
+
+//green
+// $primary: #125945;
+// $primary-fade: #4c686169;
+
+// $secondary: #b7d257;
+// $secondary-fade: #e1f2a282;
+
+// $third: #eaffc0;
+// $third-fade: #f7ffe8;
+
+// $grey: #a2acb8;
+// $black: #000;
+
+// //blue
+// $primary: #021373;
+// $primary-fade: #797d9ca8;
+
+// $secondary: #0583F2;
+// $secondary-fade: #b5d5f1c6;
+
+// $third: #51ceff;
+// $third-fade: #e1f5fdc7;
+
+// $grey: #a2acb8;
+// $black: #000;
+
+//yellow
+// $primary: #ff8c00;
+// $primary-fade: #ff8c0056;
+
+// $secondary: #ffb222;
+// $secondary-fade: #ffb2224a;
+
+// $third: #ffdc74;
+// $third-fade: #ffdc7446;
+
+// $grey: #a2acb8;
+// $black: #000;
+
+//red
+// $primary: #730202;
+// $primary-fade: #73020248;
+
+// $secondary: #BF0404;
+// $secondary-fade: #bf040441;
+
+// $third: #ff8080;
+// $third-fade: #ff8c8c2e;
+
+// $grey: #a2acb8;
+// $black: #000;
+
+//purple
+// $primary: #4d1973;
+// $primary-fade: #4d19733e;
+
+// $secondary: #a83fcb;
+// $secondary-fade: #a83fcb30;
+
+// $third: #d0b1dc;
+// $third-fade: #d0b1dc3f;
+
+// $grey: #a2acb8;
+// $black: #000;
+
+:export {
+    primary: $primary;
+    secondary: $secondary;
+    third: $third;
+
+    grey: $grey;
+    black: $black;
+  }

@@ -8,11 +8,14 @@ const Button = styled.button`
   cursor: pointer;
   font-size:0.8rem;
   margin: 0 12px;
+  position: absolute;
+  right: 10px;
+  top: -2px;
 
   background-image: url("./images/moon.png");
-  background-color: #cccccc;
+  background-color: transparent;
   background-repeat: no-repeat;
-  background-size: 14px 14px;
+  background-size: 16px 16px;
   background-position: center;
   padding: 4px 12px;
   }

@@ -26,19 +26,21 @@ const ChartGas = () => {
   scales: {
     y: { // defining min and max so hiding the dataset does not change scale range
       min: 0,
-      max: 10
+      max: 1
     }
   }
       
   }
   const chartgas = () =>[
     setChartData({
-      labels: ['Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za', 'Zo'], 
+      labels: ['Ma, m3', 'Di, m3', 'Wo, m3', 'Do, m3', 'Vr, m3', 'Za, m3', 'Zo, m3'], 
       datasets:[
         {
             label:'Gas',
-            data:[3,2,4,3,5,3,5],
+            data:[0.3,0.2,0.4,0.6,0.5,0.6,0.7],
             backgroundColor:['#637677'],
+            barThickness: 30,
+        maxBarThickness: 30,
         }
       ]
     })

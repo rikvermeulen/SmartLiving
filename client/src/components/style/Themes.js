@@ -12,12 +12,12 @@ export const lightTheme = {
     time: '#a2acb8',
 }
 export const darkTheme = {
-    body: '#616161',
+    body: '#383838',
     text: '#FAFAFA',
     greytowhite: '#fff',
     toggleBorder: '#6B8096',
     background: '#999',
-    aside: '#adadad',
+    aside: '#7b7b7b',
     menu: '#fff',
     shadow: '1px 0px 0px 0px #d0d0d0',
     image: './images/sun.png',

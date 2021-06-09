@@ -1,4 +1,15 @@
+.remove {
+  transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: none !important;
+}
+
 .modal {
+  opacity: 1;
   position: fixed;
   left: 0;
   top: 0;
@@ -27,8 +38,8 @@
   background-color: #fff;
   transition: all 0.3s ease-in-out;
   transform: translateY(-200px);
-
-  padding: 30px;
+  text-align: center;
+  padding: 50px 40px 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 1px 0px 0px 0px #f6f6f7;
@@ -44,24 +55,34 @@
 
 .modal-header,
 .modal-footer {
-  padding: 10px;
+  text-align: center;
 }
 
 .modal-title {
   margin: 0;
+  padding-bottom: 10px;
 }
 
 .modal-body {
-  padding: 10px;
+  padding-bottom: 10px;
+
+  .close-container {
+    padding: 4px 6px;
+    border-radius: 6px;
+    background-color: #8624dc;
+    display: block;
+    margin-bottom: 7px;
+  }
 }
 
 .modal_button{
+  text-align: center;
   color: #fff;
+  padding: 10px;
   border-radius: 8px;
   margin-bottom: 5px;
-  background-color: #6495ED;
-  padding: 10px;
-  margin: 10px;
+  background-color: #8624dc;
+  margin: 10px 20px;
   font-size: 15px;
   font: 15px Arial, sans-serif;
   cursor:pointer;

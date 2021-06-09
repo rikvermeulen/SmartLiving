@@ -54,19 +54,19 @@
                 }
 
                 .active {
-                    color: #8624dc !important;
+                    color: $secondary !important;
                     font-weight: bold;
 
                     hr {
                         position: absolute;
                         display: block;
-                        right: -32px;
+                        right: -34px;
                         height: 50px;
                         top: -22px;
                     }
 
                     svg {
-                        fill: #8624dc !important;
+                        fill: $secondary !important;
                     }
                 }
             }
@@ -118,7 +118,7 @@
             button:nth-child(1) {
                 padding: 6px 11px;
                 border-radius: 6px;
-                background-color: #8624dc;
+                background-color: $secondary;
                 display: block;
                 margin-bottom: 7px;
 
@@ -189,7 +189,7 @@
         }
 
         .selected {
-            background-color: #ff9066;
+            background-color: $primary;
             
             p {
                 color: #fff !important;

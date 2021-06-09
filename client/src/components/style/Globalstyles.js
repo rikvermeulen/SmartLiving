@@ -7,8 +7,24 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.50s linear;
   }
   aside {
-      background: ${({theme}) => theme.aside};
+      background-color: ${({theme}) => theme.aside} !important;
       box-shadow: ${({theme}) => theme.shadow} !important;
+  }
+
+  asidehome>temp {
+    background-color: ${({theme}) => theme.aside} !important;
+  }
+
+  temp>div>h4 {
+    color: ${({ theme }) => theme.time} !important;
+  }
+
+  asidehome>temppre>div {
+    background-color: ${({theme}) => theme.aside} !important;
+  }
+
+  temppre>div>p {
+    color: ${({ theme }) => theme.time} !important;
   }
 
   aside>div>p {
@@ -24,7 +40,11 @@ export const GlobalStyles = createGlobalStyle`
     box-shadow: ${({theme}) => theme.shadow} !important;
   }
 
-  tile8x4>div>div>div>p {
+  tile8x4>div>div>p {
+    color: ${({ theme }) => theme.greytowhite} !important;
+  }
+
+  tile8x4>div>ul>li {
     color: ${({ theme }) => theme.greytowhite} !important;
   }
 
@@ -44,6 +64,5 @@ export const GlobalStyles = createGlobalStyle`
 }
 nav>ul>li>button {
     background-image: url("${({theme}) => theme.image}")  !important;
-    background-color: ${({theme}) => theme.aside} !important;
 }
   `

@@ -1,21 +1,21 @@
-$softblue: #6495ED;
+$softblue: #ffffff;
 $darkblue: #22478b;
 $mediumblu: #1E272D;
 
 .close-container{
   position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 40px;
-  height: 40px;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
 }
 
 .leftright{
-  height: 4px;
-  width: 40px;
+  height: 3px;
+  width: 22px;
   position: absolute;
-  margin-top: 24px;
+  margin-top: 12px;
   background-color: $softblue;
   border-radius: 2px;
   transform: rotate(45deg);
@@ -23,10 +23,10 @@ $mediumblu: #1E272D;
 }
 
 .rightleft{
-  height: 4px;
-  width: 40px;
+  height: 3px;
+  width: 22px;
   position: absolute;
-  margin-top: 24px;
+  margin-top: 12px;
   background-color: $softblue;
   border-radius: 2px;
   transform: rotate(-45deg);

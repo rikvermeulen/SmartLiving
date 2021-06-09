@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 
 
 
-const Modal = props => {
+const ModalPoints = props => {
   const closeOnEscapeKeyDown = e => {
     if ((e.charCode || e.keyCode) === 27) {
       props.onClose();
@@ -21,12 +21,12 @@ const Modal = props => {
 
   function activateLasers() {
     let totalPoints
-    const remove = document.getElementById('electric-trans')
+    const remove = document.getElementById('test')
+    const total = document.getElementById('test1')
     const modal = document.getElementById('modal')
+    total.innerHTML = '2700'
     remove.classList.add('remove');
     modal.classList.add('remove');
-    totalPoints =+100
-    console.log(totalPoints)
   }
 
   return ReactDOM.createPortal(
@@ -38,13 +38,12 @@ const Modal = props => {
       <div className="modal" id="modal" onClick={props.onClose}>
         <div className="modal-content" onClick={e => e.stopPropagation()}>
           <div className="modal-header">
-            <h2 className="modal-title"><b>Gebruik minder stroom vandaag.</b></h2>
+            <h2 className="modal-title"><b>Gratis zakje stroopwafels</b></h2>
           </div>
           <div className="modal-body">
-          Je kunt veel stroom besparen voor apparaten of lampen die onnodig aanstaan. Door zulke dingen uit te schakelen bespaart u veel stroom en leeft u duurzamer. Dit is goed voor het klimaat én je portemonnee. 
+            Claim hier voor 500 punten een gratis zakje stroopwafels bij Albert Heijn.<br/>
             <br/>
-
-            Tip: Sommige huishoudelijke apparaten van vóór het jaar 2000 kun je beter vervangen. Koelkasten of vriezers ouder dan 15 jaar zijn vaak energieslurpers. Let bij de aankoop van een nieuw huishoudelijk apparaat op het energielabel.
+            De barcode wordt opgestuurd via uw aangeven mail-adres om dit bij de dichtstbijzijnde Albert Heijn te verzilveren!
           
             <div onClick={props.onClose} className="close-container">
               <div class="leftright"></div>
@@ -53,7 +52,6 @@ const Modal = props => {
           </div>
           <div className="modal-footer">
             <button className= "modal_button" onClick={activateLasers} >verzilveren</button>
-            <NavLink className="modal_button" exact={true} to = "/points">naar punten</NavLink>
           </div>
         </div>
       </div>
@@ -62,4 +60,4 @@ const Modal = props => {
   );
 };
 
-export default Modal;
+export default ModalPoints;
