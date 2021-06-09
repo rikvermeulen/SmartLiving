@@ -82,6 +82,7 @@
         height: calc(80vh + 10px);
         border-radius: 12px;
         box-shadow: 1px 0px 0px 0px #f6f6f7;
+        overflow: hidden;
 
         .tile_title {
             display: flex;

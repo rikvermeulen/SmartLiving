@@ -1,0 +1,71 @@
+.ripple-button {
+    border-radius: 8px;
+    border: none;
+    margin: 4px;
+    padding: 10px;
+    font-size: 13px;
+    background: #1976d2;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: none;
+  }
+  .ripple-button-modal{
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: #1976d2;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  .ripple-button:active{
+    transform: scale(95%);
+  }
+  .ripple-button-modal:active{
+    transform: scale(95%);
+  }
+
+  .ripple-button > .ripple {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #ffffff6e;
+    content: "";
+    border-radius: 9999px;
+    opacity: 1;
+    animation: 0.9s ease 1 forwards ripple-effect;
+  }
+  .ripple-button-modal > .ripple{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #ffffff6e;
+    content: "";
+    border-radius: 9999px;
+    opacity: 1;
+    animation: 0.9s ease 1 forwards ripple-effect;
+  }
+  
+  @keyframes ripple-effect {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(10);
+      opacity: 0.375;
+    }
+    100% {
+      transform: scale(35);
+      opacity: 0;
+    }
+  }
+  
+  .ripple-button > .content {
+    position: relative;
+  }

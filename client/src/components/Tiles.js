@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Modal from './Modal.js'
 import Chart from "./Chart";
+import RippleButtonGas from "./Buttons/Ripplebuttongas"
+import RippleButtonElektric from "./Buttons/Ripplebuttonelektric"
+import RippleButtonWater from "./Buttons/Ripplebuttonwater"
+
 
 var i = 21;
 function activateLasers() {
@@ -30,7 +34,7 @@ const Tiles = () => {
                         <div className="bar">
                             <div className="filling elektric"></div>
                         </div>
-                        <button className="quest_button elektric" onClick={() => setShow(true)}>Claimen</button>
+                        <RippleButtonElektric onClick={() => setShow(true)}>Claimen</RippleButtonElektric>
                             <Modal title="My Modal" onClose={() => setShow(false)} show={show}>
                                 <p>This is modal body</p>
                             </Modal>
@@ -58,8 +62,11 @@ const Tiles = () => {
                         <div class="bar">
                             <div class="filling gas"></div>
                         </div>
-                        <button class="quest_button gas">Claimen</button>
-                        <div class="arrow"></div>
+                        <RippleButtonGas onClick={() => setShow(true)}>Claimen</RippleButtonGas>
+                            <Modal title="My Modal" onClose={() => setShow(false)} show={show}>
+                                <p>This is modal body</p>
+                            </Modal>
+                        <div className="arrow"></div>
                     </div>
                 </tile8x8>
             </div>
